@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lugaLuga</string>
+    <string name="hint_email"></string>
 </resources>
