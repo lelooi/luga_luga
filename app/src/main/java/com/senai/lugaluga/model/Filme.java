@@ -1,4 +1,4 @@
-package com.senai.lugaluga;
+package com.senai.lugaluga.model;
 
 public class Filme {
 
