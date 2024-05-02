@@ -17,7 +17,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHold
 
     private List<Produto> produtoList;
 
-    public AdapterProduto(List<Produto> produtoList) {  d
+    public AdapterProduto(List<Produto> produtoList) {
         this.produtoList = produtoList;
     }
 
@@ -27,7 +27,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHold
 
         View listaProdutos = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_produto, parent, false);
 
-        return null;
+        return new ViewHolder(listaProdutos);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHold
 
     @Override
     public int getItemCount() {
-        return 0;
+        return produtoList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

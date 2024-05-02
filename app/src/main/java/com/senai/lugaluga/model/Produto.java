@@ -8,6 +8,14 @@ public class Produto {
     private Integer qtd;
     private String status;
 
+    public Produto(String nome, String descricao, Double preco, Integer qtd, String status) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.qtd = qtd;
+        this.status = status;
+    }
+
     public String getNome() {
         return nome;
     }
