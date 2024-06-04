@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/img_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_produtos"
+            android:icon="@drawable/ic_menu_produtos"
+            android:title="Produtos" />
+
+        <item
+            android:id="@+id/nav_soli"
+            android:icon="@drawable/img_solicitacao"
+            android:title="Solicitações" />
+
+        <item
+            android:id="@+id/nav_acomp"
+            android:icon="@drawable/img_acomp"
+            android:title="Acompanhamentos" />
+
+        <item
+            android:id="@+id/nav_atend"
+            android:icon="@drawable/img_atend"
+            android:title="Atendimento" />
+
+
+    </group>
+
+    <item
+        android:title="Mais Informaçõs">
+
+        <menu>
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_menu_info"
+                android:title="Sobre Nós"/>
+
+            <item
+                android:id="@+id/nav_fale"
+                android:icon="@drawable/ic_menu_cont"
+                android:title="Fale Conosco"/>
+
+        </menu>
+    </item>
+
+    </menu>

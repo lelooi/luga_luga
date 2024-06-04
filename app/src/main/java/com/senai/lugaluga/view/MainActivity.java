@@ -25,9 +25,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
 
-    AdapterProduto adapterProduto;
+    private AdapterProduto adapterProduto;
 
     private List<Produto> produtoList = new ArrayList<>();
     @SuppressLint("MissingInflatedId")
@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MainActivity.this, ProdutoActivity.class);
-                intent.putExtra("produto", produtoList);
-                startActivity();
+                intent.putExtra("produto", produtoList.get(i));
+                startActivity(intent);
 
             }
         }));

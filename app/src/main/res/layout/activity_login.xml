@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ic_android_black_24dp" />
+        app:srcCompat="@drawable/ic_android_black_24dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField"
@@ -50,19 +50,45 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/input_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="13dp"
+            android:layout_marginTop="12dp"
+            android:text="Esqueci a Senha"
+            android:textColor="@color/blue_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedTextField2" />
+
         <Button
             android:id="@+id/supabutton"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:text="LOGIN"
-            app:layout_constraintTop_toBottomOf="@id/input_email2"
+            app:layout_constraintTop_toBottomOf="@id/input_Password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:backgroundTint="#001C8E"
-            android:layout_marginTop="15dp"
+
             >
         </Button>
+
+        <TextView
+            android:id="@+id/fazerCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="Fazer Cadastro"
+            android:textColor="@color/blue_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supabutton" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
